@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="port.css">
+</head>
+<body>
+
+ 
+  <div class="navbar">
+    <div class="links">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li> 
+        <li><a href="#skills">SKILLS</a></li> 
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="main" id="home">
+    <div class="introduction">
+      <div class="intro">
+        <h2>Hello, it's me</h2>
+        <h1>GHANIA HUSSAIN</h1>
+        <h3>And I am a Frontend Developer</h3>
+        <button id="b1"><a href="#contact">Hire me</a> </button>
+      </div>
+    </div>
+    <div class="img">
+      <div class="two">
+        <img src="images/42.png">
+      </div>
+    
+    </div>
+  </div>
+
+ 
+  <div class="about" id="about">
+    <div class="pic">
+      <div class="one">
+        <img src="images/43.png">
+      </div>
+    </div>
+    <div class="abt">
+      <h1>About Me</h1>
+      <p>I’m a Software Engineering student with a strong passion for Frontend Development. 
+      I love turning creative ideas into interactive, user-friendly, and responsive web designs.</p>
+      <p>Currently, I’m building my skills in HTML, CSS, and JavaScript, and exploring modern practices to make websites not only functional but also visually appealing. My goal is to craft digital experiences that combine clean code with creative design.</p>
+    </div>
+  </div>
+
+ 
+  <div id="projects">
+    <h1>Projects</h1>
+    <div class="p1">
+      <img src="images/36.png" alt="To Do List" id="a">
+      <h3>To-Do-List</h3>
+      <a href="C:\Users\Hp\Desktop\internship projects\new project\index.html">view project</a>
+    </div>
+    <div class="p2">
+      <img src="images/39.jpg" alt="Calculator" id="b">
+      <h3>Modern Calculator</h3>
+      <a href="calculator.html">view project</a>
+    </div>
+    <div class="p3">
+      <img src="images/41.jpg" alt="Project" id="c">
+      <h3>Guess the code</h3>
+      <a href="game.html">view project</a>
+
+    </div>
+  </div>
+
+
+  <div id="skills">
+    <h1>Skills</h1>
+    <div class="skil">
+      <div class="html">HTML</div>
+      <div class="css">CSS</div>
+      <div class="js">JS</div>
+      <div class="php">PHP</div>
+      <div class="php">React js</div>
+
+    </div>
+  </div>
+
+  
+  <div class="last" id="contact">
+    <div class="social">
+      <div class="mail">
+        <img src="images/46.png" alt="Email">
+        <h4>ghaniahussain04@gmail.com</h4>
+      </div>
+      <div class="phone">
+        <img src="images/48.png" alt="Phone">
+        <h4>03172121673</h4>
+      </div>
+      <div class="insta">
+        <img src="images/n.png" alt="Instagram">
+        <h4>ghan.i611</h4>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Enter Your First Name">
+      <input type="email" placeholder="Enter Email">
+      <input type="text" placeholder="Contact Number">
+      <textarea rows="6" placeholder="Write Message"></textarea>
+      <input type="submit" id="b2" value="Submit">
+    </form>
+  </div>
+
+  <div class="footer"></div>
+
+
+</body>
+    <script>
+        console.log(window.innerWidth);
+    window.addEventListener("scroll", function() {
+let section = document.querySelectorAll(".about,#projects,#skills,.last");
+section.forEach(sec => {
+let top = sec.getBoundingClientRect().top;
+
+if(top < window.innerHeight-100){
+    sec.classList.add("show");
+}
+});
+
+    });
+
+
+
+
+
+</script>
+</html>

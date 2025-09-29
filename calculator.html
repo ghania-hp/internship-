@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="cal.css">
+    
+</head>
+
+<body>
+    <div class="cal">
+        <input type="text" id="show" disabled>
+        <button onclick="document.getElementById('show').value=document.getElementById('show').value.slice(0,-1)" id="r">Ac</button>
+  <button onclick="displaynum('')" id="r">m+</button>
+         <button onclick="displaynum('%')" id="r">%</button>
+<button onclick="displaynum('/')" id="r">/</button>
+
+         
+
+
+        <button onclick="displaynum('7')"> 7</button>
+        <button onclick="displaynum('8')"> 8</button> 
+        <button onclick="displaynum('9')">9</button>
+        <button onclick="displaynum('*')" id="r">*</button>
+
+        <button onclick="displaynum('4')">4</button>
+        <button onclick="displaynum('5')">5</button>
+<button onclick="displaynum('6')">6</button>
+        <button onclick="displaynum('-')" id="r">-</button>
+
+
+        <button onclick="displaynum('1')">1</button>
+        <button onclick="displaynum('2')">2</button>
+ <button onclick="displaynum('3')">3</button>
+        <button onclick="displaynum('+')" id="r">+</button>
+
+
+      
+         <button onclick="displaynum('0')">0</button>
+<button onclick="displaynum('.')" >.</button>
+<button> &#9003;</button>
+       
+
+       <button onclick="showresult('=')" id="r">=</button>
+
+</div>
+    <script>
+        function displaynum(value){
+            let val = document.getElementById('show').value +=value
+        }
+        function showresult() {
+            let res = eval(document.getElementById('show').value);
+            document.getElementById('show').value = res
+            
+        }
+
+    </script>
+</body>
+</html>
